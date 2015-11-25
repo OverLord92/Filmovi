@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: gray;
+}
+
+.dodajFilmDiv {
+	display: none;
+	border: 1px solid black;
+}
+
+.btn-primary {
+	background-color: #39EBF7;
+}
+
+.btn-primary:hover{
+	background-color: orange;
+}
+
+#spisak {
+	display: none;
+}
+
