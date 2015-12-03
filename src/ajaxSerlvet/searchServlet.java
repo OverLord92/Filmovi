@@ -37,16 +37,16 @@ public class searchServlet extends HttpServlet {
 		ArrayList<Movie> filmovi = (ArrayList<Movie>)session.getAttribute("listOfAllMovies");
 		
 		
-//		ArrayList<Movie> trazeniFilmovi = new ArrayList<>();
+
 		PrintWriter writer = response.getWriter();
 		
 		
 		for(Movie movie: filmovi){
 
 			if(
-//					movie.getMovie_name().contains(filmName) 
-//					&& 
-					movie.getMovie_genre().equals(filmGenre)){
+					(movie.getMovie_name().contains(filmName)) 
+					&& 
+					(movie.getMovie_genre().contains(filmGenre))){
 
 				
 				writer.write("<tr><td>" + movie.getMovie_name() + "</td><td>" + movie.getMovie_genre() + "</td></tr>");

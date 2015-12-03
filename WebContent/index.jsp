@@ -26,7 +26,7 @@
 		<div id="spisak">
 		<h3>Spisak filmova</h3>
 		<table class="table" id="lista">
-		<tr><th>head</th><th>head</th></tr>
+		<tr><th>ime filma</th><th>zanr</th></tr>
 			<c:forEach items="${listOfAllMovies}" var="element">
 				<tr>
 				<td>${element.movie_name}</td>

@@ -32,7 +32,7 @@ public class Controller extends HttpServlet {
 		
 		session.setAttribute("listOfAllMovies", listOfAllMovies);
 		
-		response.sendRedirect("index.jsp");
+		response.sendRedirect("accordion.jsp");
 		
 	}
 	

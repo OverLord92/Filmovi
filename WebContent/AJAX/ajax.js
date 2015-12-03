@@ -35,6 +35,8 @@ $(document).ready(function(){
 		var filmName = $('#search').val();
 		var filmGenre = $('#searchGenre').val();
 		
+		$('.rezultat').remove('tr');
+		
 		$.ajax({
 			url: 'searchServlet',
 			method: 'GET',

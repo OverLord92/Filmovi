@@ -24,7 +24,7 @@ public class CheckIfMovieAlreadyExsts extends HttpServlet {
 		String filmName = request.getParameter("filmName");
 		
 		if(MovieDAO.isFilmInDatabase(filmName)){
-			response.getWriter().write("<p>Movie already exists.</p>");
+			response.getWriter().write("<p>Film vec postoji.</p>");
 		}
 			
 		return;
